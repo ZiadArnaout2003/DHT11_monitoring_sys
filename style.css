@@ -1,0 +1,83 @@
+:root{
+    --Blue-color:rgb(41, 119, 209);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height:100vh;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+h1{
+    color: var(--Blue-color);
+    font-size: 5rem;
+    font-weight: 30px;
+    text-decoration:underline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* This will center the text within the h1 element */
+}
+.main_flex_box{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+div::before,div::after{
+    content: "";
+    position:absolute;
+    width: 102%;
+    height: 102%;
+    background-color:var(--Blue-color);
+    border-radius: 50%;
+    z-index: -1;
+    /* animation: blink 1s ease-in-out infinite alternate forwards; */
+}
+div::after{filter: blur(1.56rem);}
+@keyframes blink {
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color:var(--Blue-color);
+    }
+}
+div{
+    background-color: #fff;
+    position:relative;
+    border-radius: 50%;
+    border:none;
+    width: 52rem;
+    height: 52rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    padding:5rem;
+}
+div h2{
+    justify-self:end;
+    font-size: 5rem;
+    text-align: center;
+}
+div span{
+    font-size: 5rem;
+    color: rgb(112, 172, 250);
+    font-family: monospace;
+}
+.red-glow::before, .red-glow::after {
+    background-color: red;
+}
+.red-glow span{
+    color: red;
+}
+
+
