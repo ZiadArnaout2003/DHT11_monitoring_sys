@@ -105,10 +105,10 @@ The system uses the ESP32 to gather temperature and humidity data, displaying it
 
 ---
 ## Demo
-<video controls>
-  <source src="./Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/user-attachments/assets/ce963382-dbb5-40dd-b1a8-5ee952c953ca
+
+
 
 ## Important Notes  
 - **Local Access Only**:  
