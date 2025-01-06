@@ -9,7 +9,8 @@ This project monitors temperature and humidity in real time using an ESP32 micro
 - [How It Works](#how-it-works)  
 - [Setup Instructions](#setup-instructions)  
 - [Important Notes](#important-notes)  
-- [Future Improvements](#future-improvements)  
+- [Future Improvements](#future-improvements)
+- [Demo](#demo)
 
 ---
 
@@ -103,6 +104,11 @@ The system uses the ESP32 to gather temperature and humidity data, displaying it
    - Navigate to `http://<ESP32_IP_ADDRESS>/data` to view data in JSON format.  
 
 ---
+## Demo
+<video controls>
+  <source src="./Demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Important Notes  
 - **Local Access Only**:  
@@ -113,9 +119,6 @@ The system uses the ESP32 to gather temperature and humidity data, displaying it
 
 - **Error Handling**:  
   - Sensor errors are logged in the serial monitor for debugging.  
-
----
-
 ## Future Improvements  
 - Add a database to log historical data.  
 - Implement a mobile-friendly UI.  
